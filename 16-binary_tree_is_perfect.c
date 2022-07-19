@@ -14,20 +14,20 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	leftchild = tree->left;
 	rightchild = tree->right;
-	
-	//check if leaves on each side are same level
+
+	/* check if leaves on each side are same level */
 	if (binary_tree_height(leftchild) != binary_tree_height(rightchild))
 		return (0);
-	//if we reach the leaves
+	/* if we reach the leaves */
 	if (leftchild == NULL && rightchild == NULL)
 		return (1);
-	//if we reach a node with only 1 child
+	/* if we reach a node with only 1 child */
 	if (leftchild == NULL || rightchild == NULL)
 		return (0);
-	//else continue recursion
+	/* else continue recursion */
 	if (binary_tree_is_perfect(leftchild) && binary_tree_is_perfect(rightchild))
 		return (1);
-	return(0);
+	return (0);
 }
 
 /**
