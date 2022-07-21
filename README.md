@@ -29,6 +29,10 @@ go through the Binary Tree using traversal orders and so on
 |17-binary_tree_sibling.c|function that finds the sibling of a node|
 |18-binary_tree_uncle.c|function that finds the uncle of a node|
 |100-binary_trees_ancestor.c|function that finds the lowest common ancestor of two nodes|
+|110-binary_tree_is_bst.c|function that checks if a binary tree is a valid Binary Search Tree|
+|111-bst_insert.c|function that inserts a value in a Binary Search Tree|
+|112-array_to_bst.c|function that builds a Binary Search Tree from an array|
+|113-bst_search.c|function that searches for a value in a Binary Search Tree|
 
 ### Authors:
 *Cienna Nguyen
