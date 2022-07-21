@@ -24,6 +24,18 @@ typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
+/**
+ * struct linked_list_s - a singly linked list node
+ *
+ * @tree_node: a pointer to a binary_tree_t node
+ * @next: a pointer to the next node in the list
+ */
+typedef struct linked_list_s
+{
+	struct binary_tree_s *tree_node;
+	struct linked_list_s *next;
+} linked_list_t;
+
 void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
@@ -46,5 +58,8 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 void print_num(int n);
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+linked_list_t *enqueue_node(linked_list_t *head, binary_tree_t *node);
+binary_tree_t *pop_stack(linked_list_t **head);
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
 #endif /* _BINARY_TREES_H_ */
