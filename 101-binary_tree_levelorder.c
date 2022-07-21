@@ -3,7 +3,7 @@
 /**
  * enqueue_node - adds a node to the end of a singly linked list
  * @head: a double pointer to the head of the list
- * @tree_node: a pointer to binary_tree_t node
+ * @node: a pointer to binary_tree_t node
  *
  * Return: nothing
  */
