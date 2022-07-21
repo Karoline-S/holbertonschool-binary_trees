@@ -19,7 +19,6 @@ bst_t *bst_insert(bst_t **tree, int value)
 		*tree = binary_tree_node(*tree, value);
 		return (*tree);
 	}
-	printf("It got here");
 	if (value == (*tree)->n)/*check if value already exist at this node*/
 		return (NULL);
 	if (value < (*tree)->n) /*Go to left branch*/
