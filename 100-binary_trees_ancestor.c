@@ -43,7 +43,7 @@ binary_tree_t *binary_trees_ancestor(
 		if (depthfirst > depthsecond)
 		{
 			depthfirst -= 1;
-			first= first->parent;
+			first = first->parent;
 		}
 		else
 		{
@@ -55,7 +55,7 @@ binary_tree_t *binary_trees_ancestor(
 	while (first->n != second->n)
 	{
 		first = first->parent;
-		second=second->parent;
+		second = second->parent;
 	}
 
 	return ((binary_tree_t *)first);
