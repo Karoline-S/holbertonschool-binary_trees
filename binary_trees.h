@@ -61,5 +61,10 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 linked_list_t *enqueue_node(linked_list_t *head, binary_tree_t *node);
 binary_tree_t *pop_stack(linked_list_t **head);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+int binary_tree_is_bst(const binary_tree_t *tree);
+int _isBST(const binary_tree_t *node, int min, int max);
+bst_t *bst_insert(bst_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
+bst_t *bst_search(const bst_t *tree, int value);
 
 #endif /* _BINARY_TREES_H_ */
